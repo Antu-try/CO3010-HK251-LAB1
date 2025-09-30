@@ -1,0 +1,83 @@
+21:08:54 **** Incremental Build of configuration Debug for project Exerrcise_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:31:3: error: 'LED_1_GPIO_Port' undeclared here (not in a function)
+   31 |   LED_1_GPIO_Port, LED_2_GPIO_Port,
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:31:20: error: 'LED_2_GPIO_Port' undeclared here (not in a function)
+   31 |   LED_1_GPIO_Port, LED_2_GPIO_Port,
+      |                    ^~~~~~~~~~~~~~~
+../Core/Src/main.c:32:4: error: 'LED_3_GPIO_Port' undeclared here (not in a function)
+   32 |    LED_3_GPIO_Port, LED_4_GPIO_Port,
+      |    ^~~~~~~~~~~~~~~
+../Core/Src/main.c:32:21: error: 'LED_4_GPIO_Port' undeclared here (not in a function)
+   32 |    LED_3_GPIO_Port, LED_4_GPIO_Port,
+      |                     ^~~~~~~~~~~~~~~
+../Core/Src/main.c:33:4: error: 'LED_5_GPIO_Port' undeclared here (not in a function)
+   33 |    LED_5_GPIO_Port, LED_6_GPIO_Port,
+      |    ^~~~~~~~~~~~~~~
+../Core/Src/main.c:33:21: error: 'LED_6_GPIO_Port' undeclared here (not in a function)
+   33 |    LED_5_GPIO_Port, LED_6_GPIO_Port,
+      |                     ^~~~~~~~~~~~~~~
+../Core/Src/main.c:34:4: error: 'LED_7_GPIO_Port' undeclared here (not in a function)
+   34 |    LED_7_GPIO_Port, LED_8_GPIO_Port,
+      |    ^~~~~~~~~~~~~~~
+../Core/Src/main.c:34:21: error: 'LED_8_GPIO_Port' undeclared here (not in a function)
+   34 |    LED_7_GPIO_Port, LED_8_GPIO_Port,
+      |                     ^~~~~~~~~~~~~~~
+../Core/Src/main.c:35:4: error: 'LED_9_GPIO_Port' undeclared here (not in a function)
+   35 |    LED_9_GPIO_Port, LED_10_GPIO_Port,
+      |    ^~~~~~~~~~~~~~~
+../Core/Src/main.c:35:21: error: 'LED_10_GPIO_Port' undeclared here (not in a function)
+   35 |    LED_9_GPIO_Port, LED_10_GPIO_Port,
+      |                     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:36:4: error: 'LED_11_GPIO_Port' undeclared here (not in a function)
+   36 |    LED_11_GPIO_Port,LED_12_GPIO_Port
+      |    ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:36:21: error: 'LED_12_GPIO_Port' undeclared here (not in a function)
+   36 |    LED_11_GPIO_Port,LED_12_GPIO_Port
+      |                     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:40:3: error: 'LED_1_Pin' undeclared here (not in a function)
+   40 |   LED_1_Pin, LED_2_Pin, LED_3_Pin,
+      |   ^~~~~~~~~
+../Core/Src/main.c:40:14: error: 'LED_2_Pin' undeclared here (not in a function)
+   40 |   LED_1_Pin, LED_2_Pin, LED_3_Pin,
+      |              ^~~~~~~~~
+../Core/Src/main.c:40:25: error: 'LED_3_Pin' undeclared here (not in a function)
+   40 |   LED_1_Pin, LED_2_Pin, LED_3_Pin,
+      |                         ^~~~~~~~~
+../Core/Src/main.c:41:3: error: 'LED_4_Pin' undeclared here (not in a function)
+   41 |   LED_4_Pin, LED_5_Pin, LED_6_Pin,
+      |   ^~~~~~~~~
+../Core/Src/main.c:41:14: error: 'LED_5_Pin' undeclared here (not in a function)
+   41 |   LED_4_Pin, LED_5_Pin, LED_6_Pin,
+      |              ^~~~~~~~~
+../Core/Src/main.c:41:25: error: 'LED_6_Pin' undeclared here (not in a function)
+   41 |   LED_4_Pin, LED_5_Pin, LED_6_Pin,
+      |                         ^~~~~~~~~
+../Core/Src/main.c:42:3: error: 'LED_7_Pin' undeclared here (not in a function)
+   42 |   LED_7_Pin, LED_8_Pin, LED_9_Pin,
+      |   ^~~~~~~~~
+../Core/Src/main.c:42:14: error: 'LED_8_Pin' undeclared here (not in a function)
+   42 |   LED_7_Pin, LED_8_Pin, LED_9_Pin,
+      |              ^~~~~~~~~
+../Core/Src/main.c:42:25: error: 'LED_9_Pin' undeclared here (not in a function)
+   42 |   LED_7_Pin, LED_8_Pin, LED_9_Pin,
+      |                         ^~~~~~~~~
+../Core/Src/main.c:43:3: error: 'LED_10_Pin' undeclared here (not in a function)
+   43 |   LED_10_Pin, LED_11_Pin, LED_12_Pin
+      |   ^~~~~~~~~~
+../Core/Src/main.c:43:15: error: 'LED_11_Pin' undeclared here (not in a function)
+   43 |   LED_10_Pin, LED_11_Pin, LED_12_Pin
+      |               ^~~~~~~~~~
+../Core/Src/main.c:43:27: error: 'LED_12_Pin' undeclared here (not in a function)
+   43 |   LED_10_Pin, LED_11_Pin, LED_12_Pin
+      |                           ^~~~~~~~~~
+../Core/Src/main.c:149:1: error: expected identifier or '(' before '}' token
+  149 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+21:08:54 Build Failed. 26 errors, 0 warnings. (took 299ms)
+
