@@ -1,0 +1,92 @@
+17:05:02 **** Incremental Build of configuration Debug for project Lab2_Ex1 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+../Core/Src/software_timer.c:8:10: fatal error: ../../../../../Lab_2/Exercise/Lab2_Ex_5/Core/Inc/software_timer.h: No such file or directory
+    8 | #include "../../../../../Lab_2/Exercise/Lab2_Ex_5/Core/Inc/software_timer.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+../Core/Src/main.c: In function 'display7SEG':
+../Core/Src/main.c:83:23: error: 'a_GPIO_Port' undeclared (first use in this function); did you mean 'EN0_GPIO_Port'?
+   83 |   HAL_GPIO_WritePin ( a_GPIO_Port , a_Pin ,GPIO_PIN_RESET ) ;
+      |                       ^~~~~~~~~~~
+      |                       EN0_GPIO_Port
+../Core/Src/main.c:83:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:83:37: error: 'a_Pin' undeclared (first use in this function); did you mean 'EN0_Pin'?
+   83 |   HAL_GPIO_WritePin ( a_GPIO_Port , a_Pin ,GPIO_PIN_RESET ) ;
+      |                                     ^~~~~
+      |                                     EN0_Pin
+make: *** [Core/Src/subdir.mk:37: Core/Src/software_timer.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:84:23: error: 'b_GPIO_Port' undeclared (first use in this function); did you mean 'EN0_GPIO_Port'?
+   84 |   HAL_GPIO_WritePin ( b_GPIO_Port , b_Pin ,GPIO_PIN_RESET ) ;
+      |                       ^~~~~~~~~~~
+      |                       EN0_GPIO_Port
+../Core/Src/main.c:84:37: error: 'b_Pin' undeclared (first use in this function); did you mean 'EN0_Pin'?
+   84 |   HAL_GPIO_WritePin ( b_GPIO_Port , b_Pin ,GPIO_PIN_RESET ) ;
+      |                                     ^~~~~
+      |                                     EN0_Pin
+../Core/Src/main.c:85:23: error: 'c_GPIO_Port' undeclared (first use in this function); did you mean 'EN0_GPIO_Port'?
+   85 |   HAL_GPIO_WritePin ( c_GPIO_Port , c_Pin ,GPIO_PIN_RESET ) ;
+      |                       ^~~~~~~~~~~
+      |                       EN0_GPIO_Port
+../Core/Src/main.c:85:37: error: 'c_Pin' undeclared (first use in this function); did you mean 'EN0_Pin'?
+   85 |   HAL_GPIO_WritePin ( c_GPIO_Port , c_Pin ,GPIO_PIN_RESET ) ;
+      |                                     ^~~~~
+      |                                     EN0_Pin
+../Core/Src/main.c:86:23: error: 'd_GPIO_Port' undeclared (first use in this function); did you mean 'EN0_GPIO_Port'?
+   86 |   HAL_GPIO_WritePin ( d_GPIO_Port , d_Pin ,GPIO_PIN_RESET ) ;
+      |                       ^~~~~~~~~~~
+      |                       EN0_GPIO_Port
+../Core/Src/main.c:86:37: error: 'd_Pin' undeclared (first use in this function); did you mean 'EN0_Pin'?
+   86 |   HAL_GPIO_WritePin ( d_GPIO_Port , d_Pin ,GPIO_PIN_RESET ) ;
+      |                                     ^~~~~
+      |                                     EN0_Pin
+../Core/Src/main.c:87:23: error: 'e_GPIO_Port' undeclared (first use in this function); did you mean 'EN0_GPIO_Port'?
+   87 |   HAL_GPIO_WritePin ( e_GPIO_Port , e_Pin ,GPIO_PIN_RESET ) ;
+      |                       ^~~~~~~~~~~
+      |                       EN0_GPIO_Port
+../Core/Src/main.c:87:37: error: 'e_Pin' undeclared (first use in this function); did you mean 'EN0_Pin'?
+   87 |   HAL_GPIO_WritePin ( e_GPIO_Port , e_Pin ,GPIO_PIN_RESET ) ;
+      |                                     ^~~~~
+      |                                     EN0_Pin
+../Core/Src/main.c:88:23: error: 'f_GPIO_Port' undeclared (first use in this function); did you mean 'EN0_GPIO_Port'?
+   88 |   HAL_GPIO_WritePin ( f_GPIO_Port , f_Pin ,GPIO_PIN_RESET ) ;
+      |                       ^~~~~~~~~~~
+      |                       EN0_GPIO_Port
+../Core/Src/main.c:88:37: error: 'f_Pin' undeclared (first use in this function); did you mean 'EN0_Pin'?
+   88 |   HAL_GPIO_WritePin ( f_GPIO_Port , f_Pin ,GPIO_PIN_RESET ) ;
+      |                                     ^~~~~
+      |                                     EN0_Pin
+../Core/Src/main.c:89:23: error: 'g_GPIO_Port' undeclared (first use in this function); did you mean 'EN0_GPIO_Port'?
+   89 |   HAL_GPIO_WritePin ( g_GPIO_Port , g_Pin ,GPIO_PIN_SET ) ;
+      |                       ^~~~~~~~~~~
+      |                       EN0_GPIO_Port
+../Core/Src/main.c:89:37: error: 'g_Pin' undeclared (first use in this function); did you mean 'EN0_Pin'?
+   89 |   HAL_GPIO_WritePin ( g_GPIO_Port , g_Pin ,GPIO_PIN_SET ) ;
+      |                                     ^~~~~
+      |                                     EN0_Pin
+../Core/Src/main.c: In function 'MX_GPIO_Init':
+../Core/Src/main.c:337:28: error: 'a_Pin' undeclared (first use in this function)
+  337 |   HAL_GPIO_WritePin(GPIOB, a_Pin|b_Pin|c_Pin|d_Pin
+      |                            ^~~~~
+../Core/Src/main.c:337:34: error: 'b_Pin' undeclared (first use in this function)
+  337 |   HAL_GPIO_WritePin(GPIOB, a_Pin|b_Pin|c_Pin|d_Pin
+      |                                  ^~~~~
+../Core/Src/main.c:337:40: error: 'c_Pin' undeclared (first use in this function)
+  337 |   HAL_GPIO_WritePin(GPIOB, a_Pin|b_Pin|c_Pin|d_Pin
+      |                                        ^~~~~
+../Core/Src/main.c:337:46: error: 'd_Pin' undeclared (first use in this function)
+  337 |   HAL_GPIO_WritePin(GPIOB, a_Pin|b_Pin|c_Pin|d_Pin
+      |                                              ^~~~~
+../Core/Src/main.c:338:28: error: 'e_Pin' undeclared (first use in this function)
+  338 |                           |e_Pin|f_Pin|g_Pin, GPIO_PIN_RESET);
+      |                            ^~~~~
+../Core/Src/main.c:338:34: error: 'f_Pin' undeclared (first use in this function)
+  338 |                           |e_Pin|f_Pin|g_Pin, GPIO_PIN_RESET);
+      |                                  ^~~~~
+../Core/Src/main.c:338:40: error: 'g_Pin' undeclared (first use in this function)
+  338 |                           |e_Pin|f_Pin|g_Pin, GPIO_PIN_RESET);
+      |                                        ^~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.

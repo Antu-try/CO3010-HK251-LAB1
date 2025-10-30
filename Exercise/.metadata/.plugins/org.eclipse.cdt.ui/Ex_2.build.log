@@ -1,0 +1,22 @@
+16:11:38 **** Build of configuration Debug for project Ex_2 ****
+make -j16 all 
+arm-none-eabi-gcc -o "Ex_2.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_1\Ex_2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ex_2.elf
+ 
+arm-none-eabi-size   Ex_2.elf 
+arm-none-eabi-objdump -h -S  Ex_2.elf  > "Ex_2.list"
+arm-none-eabi-objcopy  -O ihex  Ex_2.elf  "Ex_2.hex"
+arm-none-eabi-objcopy  -O binary  Ex_2.elf  "Ex_2.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4692	     24	   1568	   6284	   188c	Ex_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex_2.hex
+Finished building: Ex_2.bin
+ 
+ 
+Finished building: Ex_2.list
+ 
+
+16:11:39 Build Finished. 0 errors, 0 warnings. (took 327ms)
+

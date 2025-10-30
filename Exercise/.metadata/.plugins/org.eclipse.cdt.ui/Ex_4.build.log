@@ -1,0 +1,23 @@
+00:36:11 **** Incremental Build of configuration Debug for project Ex_4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Ex_4.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_1\Ex_4\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex_4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ex_4.elf
+ 
+arm-none-eabi-size   Ex_4.elf 
+arm-none-eabi-objdump -h -S  Ex_4.elf  > "Ex_4.list"
+arm-none-eabi-objcopy  -O ihex  Ex_4.elf  "Ex_4.hex"
+arm-none-eabi-objcopy  -O binary  Ex_4.elf  "Ex_4.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4872	    164	   1572	   6608	   19d0	Ex_4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex_4.hex
+Finished building: Ex_4.bin
+ 
+ 
+Finished building: Ex_4.list
+ 
+
+00:36:11 Build Finished. 0 errors, 0 warnings. (took 454ms)
+

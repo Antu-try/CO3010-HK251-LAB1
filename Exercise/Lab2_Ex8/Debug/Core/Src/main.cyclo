@@ -1,0 +1,12 @@
+../Core/Src/main.c:58:6:set_timer	1
+../Core/Src/main.c:64:6:timer_run	4
+../Core/Src/main.c:79:6:timer_isr	1
+../Core/Src/main.c:84:6:display7SEG	11
+../Core/Src/main.c:193:6:update7SEG	5
+../Core/Src/main.c:275:8:updateClockBuffer	1
+../Core/Src/main.c:243:5:main	8
+../Core/Src/main.c:336:6:SystemClock_Config	3
+../Core/Src/main.c:373:13:MX_TIM2_Init	4
+../Core/Src/main.c:418:13:MX_GPIO_Init	1
+../Core/Src/main.c:460:6:HAL_TIM_PeriodElapsedCallback	1
+../Core/Src/main.c:470:6:Error_Handler	1

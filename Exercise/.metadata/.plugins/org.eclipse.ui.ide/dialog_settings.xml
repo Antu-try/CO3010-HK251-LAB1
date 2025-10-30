@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_2\Exercise\Lab2_Ex1"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Reports_Lab\STM32LAB2"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\STM32LAB2"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_1\Exercise\Ex_1"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_1\Exercise\Ex_4"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_2\Exercise\Lab2_Ex_5"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_2\VXL_2110142_Lab2-main\STM32_Lab2"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_2\Exercise\Ex_5"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_2\Exercise\Ex_4"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_2\Exercise\Ex_3"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_2\Exercise\Ex_5"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_2\Exercise\Ex_4\Ex_4.ioc"/>
+			<item value="D:\2.HOC\1.Hoc tap truong\5.nam_4\2.VXL-VKD\Lab\Lab_2\Exercise\project_1\project_1.ioc"/>
+		</list>
+	</section>
+</section>
