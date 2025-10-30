@@ -1,0 +1,9 @@
+../Core/Src/traffic_light.c:9:6:led_red_and_green	1
+../Core/Src/traffic_light.c:19:6:led_red_and_yellow	1
+../Core/Src/traffic_light.c:29:6:led_green_and_red	1
+../Core/Src/traffic_light.c:39:6:led_yellow_and_red	1
+../Core/Src/traffic_light.c:49:6:clear	1
+../Core/Src/traffic_light.c:60:6:toggle	1
+../Core/Src/traffic_light.c:70:6:togglered	1
+../Core/Src/traffic_light.c:79:6:toggleyellow	1
+../Core/Src/traffic_light.c:88:6:togglegreen	1
