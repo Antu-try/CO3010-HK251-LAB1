@@ -1,0 +1,96 @@
+/*
+ * software_timer.c
+ *
+[ *  Created on: Oct 30, 2025
+ *      Author: Admin
+ */
+#include "traffic_light.h"
+
+void led_red_and_green(){
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, SET);
+
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, SET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, RESET);
+}
+
+void led_red_and_yellow(){
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, SET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);
+
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, SET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, RESET);
+}
+
+void led_green_and_red(){
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, SET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);
+
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, SET);
+}
+
+void led_yellow_and_red(){
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, SET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);
+
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, SET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, RESET);
+}
+
+void clear()
+{
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);
+
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, RESET);
+}
+
+void toggle()
+{
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_8);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_9);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_12);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_13);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
+}
+
+void togglered()
+{
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, RESET);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_12);
+}
+void toggleyellow()
+{
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, RESET);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_8);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_13);
+}
+void togglegreen()
+{
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, RESET);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, RESET);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_9);
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
+}

@@ -1,0 +1,5 @@
+../Core/Src/global.c:12:15:SCH_Add_Task	4
+../Core/Src/global.c:31:6:SCH_Update	4
+../Core/Src/global.c:49:15:SCH_Delete_Task	2
+../Core/Src/global.c:62:6:SCH_Dispatch_Tasks	3
+../Core/Src/global.c:73:6:SCH_Init	2
